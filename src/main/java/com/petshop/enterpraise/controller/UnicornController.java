@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@CrossOrigin
 @RestController //обрабатывает класс, содержит методы, которые будут обрабатывать HTTP-запросы
 @RequestMapping("/api")
 
