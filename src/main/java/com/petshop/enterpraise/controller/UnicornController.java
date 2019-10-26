@@ -36,7 +36,7 @@ public class UnicornController {
     }
 
     @PutMapping("/unicorn/{id}")
-    public Mono<Unicorn> uptadeUnicorn(@RequestBody Unicorn newUnicorn, @PathVariable String id) {
+    public Mono<Unicorn> updateUnicorn(@RequestBody Unicorn newUnicorn, @PathVariable String id) {
         return repository.findById(id).flatMap(oldUnicorn -> {
             oldUnicorn.setName(newUnicorn.getName());
             oldUnicorn.setMagicSkills(newUnicorn.getMagicSkills());

@@ -25,7 +25,7 @@ public class PonyController {
     }
 
     @PostMapping("/pony")
-    public Mono<Pony> cteatePony(@RequestBody Pony pony){
+    public Mono<Pony> createPony(@RequestBody Pony pony){
         return ponyRepository.save(pony);
     }
 
