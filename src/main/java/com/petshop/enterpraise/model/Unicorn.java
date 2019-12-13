@@ -14,6 +14,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Unicorn {
  @Id //уникальный идентификатор, который позволит отличать один объект от другого
     private String id;
- private String name;
- private String magicSkills;
+    private String name;
+    private String magicSkills;
 }
